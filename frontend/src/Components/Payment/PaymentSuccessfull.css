@@ -1,0 +1,13 @@
+.paymentsuccessfull {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.paymentsuccessfull p{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
