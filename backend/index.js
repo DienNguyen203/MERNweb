@@ -10,10 +10,16 @@ const { clearScreenDown } = require("readline");
 const { CLIENT_RENEG_LIMIT } = require("tls");
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://mer-nweb.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 
 // database connection with mongoDB
-mongoose.connect("mongodb+srv://root:009009009@cluster0.7udlbhv.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://nguynin7233:0945070559@cluster0.qcdfjmu.mongodb.net/?retryWrites=true&w=majority")
 
 // API creation
 
